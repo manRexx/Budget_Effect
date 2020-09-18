@@ -47,7 +47,7 @@ const Options = [
   {
     name: "Sepia",
     property: "sepia",
-    value: 100,
+    value: 0,
     range: {
       min: 0,
       max: 200,
@@ -97,9 +97,9 @@ function App() {
     return { filter: filters.join(" ") };
   }
 
-  const element = document.querySelector(".main__image");
-  const style = getComputedStyle(element);
-  console.log(style);
+  // const element = document.querySelector(".main__image");
+  // const style = getComputedStyle(element);
+  // console.log(style);
 
   return (
     <div className="container">
