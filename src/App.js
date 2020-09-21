@@ -74,6 +74,26 @@ const Options = [
     },
     unit: "px",
   },
+  {
+    name: "Invert",
+    property: "invert",
+    value: 0,
+    range: {
+      min: 0,
+      max: 100,
+    },
+    unit: "%",
+  },
+  {
+    name: "Opacity",
+    property: "opacity",
+    value: 100,
+    range: {
+      min: 0,
+      max: 100,
+    },
+    unit: "%",
+  },
 ];
 
 function App() {
@@ -103,6 +123,9 @@ function App() {
 
   return (
     <div className="container">
+      <div className="item1">
+        <h1>Budget-Effect</h1>
+      </div>
       <div className="main__image" style={getImageStyle()}></div>
       <div className="sidebar">
         {options.map((option, index) => {
